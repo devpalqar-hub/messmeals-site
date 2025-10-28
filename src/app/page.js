@@ -1,10 +1,13 @@
 import Image from "next/image";
-import styles from "./page.module.css";
+import Header from "./Sections/Header/header";
+import Hero from "./Sections/Hero/hero";
 import Footer from "./Sections/Footer/Footer";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
+    <div>
+      <Header />
+      <Hero />
       <Footer/>
     </div>
   );
