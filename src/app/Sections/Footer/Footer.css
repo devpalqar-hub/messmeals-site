@@ -1,0 +1,24 @@
+.footermain{
+    display: flex;
+}
+.appname{
+    font-family:'Righteous', cursive;
+    font-size: 30px;
+}
+.appdetail{
+    font-size: 20px;
+}
+.sec2 ul{
+    list-style: none;
+}
+.socialicons{
+    display: flex;
+    gap: 10px;
+}
+.sibox{
+    border-radius: 100%;
+    padding: 10px;
+}
+.socialicon{
+    font-size: 20px;
+}
