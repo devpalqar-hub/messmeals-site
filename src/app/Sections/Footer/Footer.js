@@ -1,6 +1,6 @@
 import React from 'react'
-import { FaFacebookF,FaInstagram,FaGooglePlay   } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaFacebookF,FaInstagram,FaGooglePlay} from "react-icons/fa";
+import { FaXTwitter ,FaApple } from "react-icons/fa6";
 import  './Footer.css'
 
 const Footer = () => {
@@ -8,27 +8,31 @@ const Footer = () => {
     <footer>
         <div className='footertop'>
             <div className='sec1'>
-                <p className="appname">MESS MEALS</p>            
+                <p className="logo">MESS MEALS</p>            
             </div>
             <div className='sec2'>
                 <ul>
-                    <li>Home</li>
+                    
                     <li>About</li>
                     <li>Features</li>
                     <li>Plans</li>
                     <li>Contact</li>
+
                 </ul>
             </div>
-            <div className='socialicons'>
-                <button className="sibox"><FaFacebookF className='roticon'/></button>
-                <button className="sibox"><FaInstagram className='roticon'/></button>
-                <button className="sibox"><FaXTwitter  className='roticon'/></button>
-                <button className="sibox"><FaGooglePlay className='roticon'/></button>
+            <div className='downloadicons'>
+                <button className="downbox"><FaApple   className='roticon'/></button>
+                <button className="downbox"><FaGooglePlay className='roticon'/></button>
             </div>
            </div>
+           <div className="divider"></div>
            <div className="footerbottom">
-                <div className="divider"></div>
-                <p>Copyright ©2021 Seven spices</p>
+                <p>Copyright ©2025 <span>MESS MEALS</span></p>
+                <ul>
+                    <li>Privacy Policy</li>
+                    <li> | </li>
+                    <li>Terms of Service</li>
+                </ul>
            </div>
     </footer>
   )

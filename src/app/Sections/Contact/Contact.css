@@ -1,0 +1,153 @@
+.contact{
+    padding: 24px 48px;
+}
+.contactmain{
+    display: flex;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.contactmain h3{
+    font-size: 20px;
+}
+.contactleftsection{  
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 5rem;
+    background: #1A1D29;
+    color: white;
+    flex: 1;
+}
+.contactrightsection{
+    padding: 5rem;
+    display: flex;
+    background: #FFFFFF;
+    flex: 1;
+    justify-content: center;
+}
+.inquiryform {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+.inquiryform input,textarea {
+  border: 1px solid #00000014;
+  border-radius: 10px;
+  padding: 12px 15px;
+  outline: none;
+  background-color: #F0F2F5;
+}
+.inquiryform input,textarea::placeholder{
+    color: #6B7280;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+}
+.inquiryform textarea {
+  resize: none;
+}
+.inquiryform  button{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #1A1D29;
+  color: #F5F7FA;
+  border-radius: 10px;
+  padding: 14px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.inquiryform  button:hover{
+    color: #00C8FF;
+    background: #163349;
+}
+
+.contactbox{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.contacticon{
+  font-size: 25px;
+}
+.contactbox h4{
+    font-size: 16px;
+}
+.contactbox p{
+    font-size: 15px;
+}
+
+.socialicons{
+    display: flex;
+}
+.sibox{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid #1A1D29;
+    font-size: 21px;
+    color: #1A1D29;
+}
+.sibox:hover{
+    background: #1A1D29;
+    color: #F5F7FA;
+    border: 2px solid #F5F7FA;
+    transition: 0.3s ease-in-out;
+}
+.sibox:active{
+    transform: scale(85%);
+    transition: 0.3s ease-in-out;
+}
+
+
+
+@media (max-width: 970px) {
+  .contactmain {
+    flex-direction: column;
+  }
+
+  .contactleftsection,
+  .contactrightsection {
+    padding: 2.5rem; 
+  }
+}
+@media (max-width: 480px) {
+    .contactmain h3{
+        font-size: 16px;
+    }
+      .contacticon{
+  font-size: 18px;
+}
+    .contactbox h4{
+        font-size: 14px;
+    }
+    .contactbox p{
+        font-size: 12px;
+    }
+  .contactleftsection,
+  .contactrightsection {
+    padding: 1.5rem; 
+  }
+  .sibox{
+    padding: 8px;
+    font-size: 18px;
+}
+
+.inquiryform {
+  gap: 18px;
+}
+.inquiryform input,textarea {
+  padding: 10px 12px;
+}
+.inquiryform input,textarea::placeholder{
+    font-size: 12px;
+}
+.inquiryform  button{
+  padding: 12px;
+  font-size: 12px;
+}
+}
