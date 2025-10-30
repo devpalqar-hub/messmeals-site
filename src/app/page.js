@@ -7,6 +7,7 @@ import FeaturesSection from "./Sections/Features/FeaturesSection";
 
 import Contact from "./Sections/Contact/Contact";
 import Plans from "./Sections/Plans/Plans";
+import Analytics from "./Sections/Analytics/Analytics";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <About />
       <FeaturesSection />
       <Plans/>
+      <Analytics/>
       <Contact/>
       <Footer/>
     </div>
