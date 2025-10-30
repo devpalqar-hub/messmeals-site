@@ -5,7 +5,7 @@ import { FaXTwitter,FaPhone } from "react-icons/fa6";
 import { HiOutlineMail,HiOutlinePhone  } from "react-icons/hi";
 export default function Contact() {
   return (
-    <div className='contact'>
+    <div className='contact' id='contact'>
         <div className="contactmain">
           <div className="contactleftsection">
             <h3>Get In Touch With Us!</h3>

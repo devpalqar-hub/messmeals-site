@@ -6,7 +6,7 @@ import { BiCustomize } from "react-icons/bi";
 
 export default function Plans() {
   return (
-    <div className='planssection'>
+    <div className='planssection' id='pricing'>
 
         <h2>Plans & Pricing</h2>
         <div className="planalign">
