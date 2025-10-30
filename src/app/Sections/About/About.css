@@ -24,6 +24,16 @@
   color: #1a242f;
 }
 
+.about-headline h2::after {
+  content: "";
+  display: block;
+  margin: 14px auto 0;
+  width: 100px;
+  height: 4px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, #009cae, #00d2ff);
+}
+
 .about-features-row {
   display: flex;
   gap: 36px;
@@ -35,11 +45,9 @@
 .about-feature {
   background: #fff;
   border-radius: 18px;
-  box-shadow: 0 4px 24px 0 rgba(0,0,0,0.06);
   padding: 32px 18px 28px 18px;
   max-width: 280px;
   text-align: center;
-  transition: box-shadow 0.2s;
 }
 
 .icon {
