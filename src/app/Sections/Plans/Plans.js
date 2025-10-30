@@ -10,11 +10,11 @@ export default function Plans() {
 
 
   return (
-    <div className='planssection'id="plans">
+    <div className='planssection' id="pricing">
            
              <div className="planbox">
-                <div className='planname'><span>FREE</span> trail !</div>
-                    <p className='plandetail'>Join our free trail <br />For limited 15 users only</p>
+                <div className='planname'><span>FREE</span> trial !</div>
+                    <p className='plandetail'>Join our free trial <br />For limited 15 users only</p>
                     <div className="lottiebox">
                       <Lottie animationData={planani} 
                       loop
