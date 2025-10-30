@@ -23,7 +23,7 @@ const steps = [
 export default function HowItWorksSection() {
   return (
     <section className="how-steps-container" id="how">
-      <h2 className="how-steps-title">How Mess Meals Works</h2>
+      <h2 className="how-steps-title">How Mess Meals Works?</h2>
       <div className="how-steps-row">
         {steps.map((step, idx) => (
           <div className="how-step" key={idx}>

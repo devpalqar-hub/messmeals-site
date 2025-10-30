@@ -22,7 +22,7 @@ export default function AboutSection() {
           <p>Track orders, deliveries, and feedback with clear, instant updates on your dashboard.</p>
         </div>
         <div className="about-feature">
-          <FaMapPin className='icon'/>
+          <FaMapPin className='icon' id='icons'/>
           <h3>Easy Management</h3>
           <p>Mess owners and delivery staff manage everything—analytics, payments, and service—all in one place.</p>
         </div>
