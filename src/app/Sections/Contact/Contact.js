@@ -1,14 +1,22 @@
+"use client";
+
 import React from 'react'
 import './Contact.css'
+import Image from 'next/image';
+import Lottie from "lottie-react";
+import contactani from "../../../animations/contact us.json";
+
 import { FaFacebookF,FaInstagram,FaLinkedinIn ,FaWhatsapp } from "react-icons/fa";
 import { FaXTwitter,FaPhone } from "react-icons/fa6";
 import { HiOutlineMail,HiOutlinePhone  } from "react-icons/hi";
+
 export default function Contact() {
   return (
-    <div className='contact' id='contact'>
+    <div className='contact' id="contact">
         <div className="contactmain">
           <div className="contactleftsection">
-            <h3>Get In Touch With Us!</h3>
+           <div className="contactdetailsection">
+             <h3>Get In Touch With Us!</h3>
           <div className="contactbox">
             <HiOutlineMail className='contacticon'/>
             <div>
@@ -27,12 +35,12 @@ export default function Contact() {
           <FaWhatsapp className='contacticon'/>
            <h4>Chat with Us</h4>
          </div>
-          <div className='socialicons'>
-              <button className="sibox"><FaFacebookF className='roticon'/></button>
-              <button className="sibox"><FaInstagram className='roticon'/></button>
-              <button className="sibox"><FaXTwitter  className='roticon'/></button>
-              <button className="sibox"><FaLinkedinIn  className='roticon'/></button>
+         
+           </div>
+          <div className="contactimgsection">
+            <Lottie animationData={contactani} />
           </div>
+          
         </div>
           <div className="contactrightsection"> 
             <form className="inquiryform">

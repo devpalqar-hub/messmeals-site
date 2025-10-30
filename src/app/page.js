@@ -9,6 +9,7 @@ import Head from "next/head";
 import Contact from "./Sections/Contact/Contact";
 import Plans from "./Sections/Plans/Plans";
 import HowItWorksSection from "./Sections/HowItWorks/HowItWorksSection";
+import Analytics from "./Sections/Analytics/Analytics";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <FeaturesSection />
       <HowItWorksSection />
       <Plans/>
+      <Analytics/>
       <Contact/>
       <Footer/>
     </div>
