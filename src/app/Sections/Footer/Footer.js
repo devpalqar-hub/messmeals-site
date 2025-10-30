@@ -2,6 +2,8 @@ import React from 'react'
 import { FaFacebookF,FaInstagram,FaGooglePlay} from "react-icons/fa";
 import { FaXTwitter ,FaApple } from "react-icons/fa6";
 import  './Footer.css'
+import Image from 'next/image';
+
 
 const Footer = () => {
   return (
@@ -12,17 +14,16 @@ const Footer = () => {
             </div>
             <div className='sec2'>
                 <ul>
-                    
-                    <li>About</li>
-                    <li>Features</li>
-                    <li>Plans</li>
-                    <li>Contact</li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#plans">Pricing</a></li>
+                    <li><a href="#contact">Contact</a></li>
 
                 </ul>
             </div>
-            <div className='downloadicons'>
-                <button className="downbox"><FaApple   className='roticon'/></button>
-                <button className="downbox"><FaGooglePlay className='roticon'/></button>
+            <div className='downloadbadges'>
+                <Image src="/play-store.png" alt="Google Play" width={130} height={44} />
+                <Image src="/app-store.png" alt="App Store" width={130} height={44} />
             </div>
            </div>
            <div className="divider"></div>
