@@ -20,32 +20,23 @@ footer{
     color: #00C8FF;
     font-weight: 500;
 }
-.downloadicons{
-    display: flex;
-}
-.downbox{
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    padding: 10px;
-    margin: 10px;
-    border: 2px solid #1A1D29;
-    font-size: 21px;
-    color: #1A1D29;
-}
-.downbox:hover{
-    background: #1A1D29;
-    color: #F5F7FA;
-    transition: 0.3s ease-in-out;
-}
-.downbox:active{
-    transform: scale(85%);
-    transition: 0.3s ease-in-out;
-}
 .divider{
     margin: 20px;
     border: 1px solid #a3a5a955;
+}
+.downloadicons{
+   
+}
+.downloadbadges img {
+  margin-right: 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0,0.1);
+  transition: box-shadow 0.3s;
+}
+
+.downloadbadges img:hover {
+  box-shadow: 0 0 8px rgba(0,0,0,0.0.1);
+  cursor: pointer;
 }
 .footerbottom{
     display: flex;
@@ -76,17 +67,7 @@ footer{
     font-size: 16px;
     gap: 20px;
 }
-.downloadicons{
-    display: flex;
-    gap: 10px;
-}
-.downbox{
-    padding: 8px;
-    margin: 0;
-    border: 2px solid #1A1D29;
-    font-size: 18px;
-    color: #1A1D29;
-}
+
 .divider{
     margin: 10px;
     border: 1px solid #a3a5a955;
@@ -112,19 +93,15 @@ footer{
     font-size: 14px;
     gap: 20px;
 }
-.downloadicons{
-    display: flex;
-    gap: 10px;
-}
-.downbox{
-    padding: 8px;
-    margin: 0;
-    border: 2px solid #1A1D29;
-    font-size: 18px;
-    color: #1A1D29;
-}
+
 .divider{
     margin: 10px;
     border: 1px solid #a3a5a955;
+}
+.downloadbadges img {
+  margin-right: 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0,0.1);
+  transition: box-shadow 0.3s;
 }
 }
