@@ -28,8 +28,8 @@ export default function Hero() {
             Efficient meal plans. Easy delivery. Powerful analytics for your mess.
           </p>
           <div className="hero-btns">
-            <div className="dwnld-btn">Download</div>
-            <div className="demo-btn">Get Demo</div>
+            <a href="#icons" className="dwnld-btn">Download</a>
+            <a href="#pricing" className="demo-btn">Free Trial</a>
           </div>
         </div>
 
