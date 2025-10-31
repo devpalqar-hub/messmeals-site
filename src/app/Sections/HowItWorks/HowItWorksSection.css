@@ -1,5 +1,4 @@
 .how-steps-container {
-  background: #fafdff;
   padding: 64px 0 42px 0;
   text-align: center;
 }
@@ -7,7 +6,7 @@
 .how-steps-title {
   font-size: 2.1rem;
   font-weight: 700;
-  color: #232b3c;
+  color: black;
   margin-bottom: 55px;
 }
 
@@ -18,7 +17,7 @@
   width: 100px;
   height: 4px;
   border-radius: 2px;
-  background: linear-gradient(90deg, #009cae, #00d2ff);
+  background: linear-gradient(90deg, #DA3A41, #F4C561);
 }
 
 .how-steps-row {
@@ -45,7 +44,7 @@
   font-size: 3rem;
   font-weight: 800;
   color: #fff;
-  background-color: #232b3c; 
+  background-color: #F4C561; 
   box-shadow: 0 4px 16px rgba(50,80,100,0.15);
   border-radius: 13px;
   width: 62px;
@@ -59,7 +58,7 @@
 .how-step-title {
   font-size: 1.2rem;
   font-weight: 600;
-  color: #232b3c;
+  color:black;
   margin-bottom: 10px;
 }
 
@@ -68,6 +67,7 @@
   color: #465175;
   line-height: 1.6;
   margin: 0 0 10px 0;
+  font-weight: 300;
 }
 
 .how-curved-arrow {
@@ -76,7 +76,7 @@
   right: -64px;
   width: 76px;
   height: 46px;
-  border-top: 3px solid #b3d8ee;
+  border-top: 3px solid #dbdbdb;
   border-right: 3px solid transparent;
   border-bottom-left-radius: 72px 38px;
   border-bottom: none;
@@ -97,4 +97,21 @@
   .how-curved-arrow {
    display: none;
   }
+}
+@media (max-width: 480px) {
+  .how-steps-title{
+    font-size: 1.5rem;
+  }
+  .how-steps-row {
+    flex-direction: column;
+    gap: 30px;
+    max-width: 350px;
+  }
+  .how-step-title {
+    font-size: 1.1rem;
+  }
+  .how-step-desc{
+    font-size: 0.90rem;
+  }
+
 }

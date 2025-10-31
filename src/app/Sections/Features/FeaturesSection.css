@@ -7,7 +7,7 @@
 .features-title {
   font-size: 2rem;
   font-weight: 700;
-  color: #163349;
+  color: black;
   margin-bottom: 38px;
   position: relative;
 }
@@ -18,7 +18,7 @@
   width: 100px;
   height: 4px;
   border-radius: 2px;
-  background: linear-gradient(90deg, #009cae, #00d2ff);
+  background: linear-gradient(90deg, #DA3A41, #F4C561);
 }
 
 .features-grid {
@@ -33,7 +33,7 @@
 .feature-card {
   background: #fff;
   border-radius: 28px;
-  box-shadow: 0 6px 32px rgba(54,89,124,0.08);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
   padding: 38px 22px 34px 22px;
   max-width: 240px;
   min-height: 265px;
@@ -47,32 +47,32 @@
 .feature-card:hover {
   transform: translateY(-8px) scale(1.045);
   z-index: 2;
-  border-color: #cfecf8;
 }
 
-.feature-icon {
+.feature-icons {
   margin: 0 auto 21px auto;
   font-size: 2.55rem; /* For React Icons */
-  color: #009cae;
+  color: #DA3A41;
 }
 
 .feature-card h3 {
   font-size: 1.11rem;
   font-weight: 700;
-  color: #1b355a;
+  color: black;
   margin-bottom: 9px;
   letter-spacing: 0.5px;
 }
 
 .feature-card p {
   font-size: 1rem;
-  color: #416083;
+  color: #53555a;
   line-height: 1.7;
   margin: 0;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 @media (max-width: 800px) {
+  
   .features-grid {
     flex-direction: column;
     gap: 27px;
@@ -82,4 +82,19 @@
     min-width: 90vw;
     max-width: 420px;
   }
+}
+@media (max-width: 480px){
+  .features-title{
+    font-size: 1.5rem;
+  }
+  .features-grid {
+    flex-direction: column;
+    gap: 27px;
+    align-items: center;
+  }
+  .feature-card {
+    min-width: 80vw;
+    max-width: 250px;
+  }
+
 }

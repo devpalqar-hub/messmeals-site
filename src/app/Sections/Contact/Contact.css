@@ -16,19 +16,19 @@
     gap: 2.5rem;
     
 }
- .contactimgsection{
+ .contactimgsection img{
   position: absolute;
-  bottom: -7;
-  right: 0;
+  bottom: -1;
+  right: -10;
   display: flex;
-  width:500px;
+  width:600px;
  }
 .contactleftsection{
   position: relative;
     display: flex;
     gap: 2rem;
     padding: 5rem;
-    background: #1A1D29;
+    background: #DA3A41;
     color: white;
     flex: 1;
     overflow: hidden;
@@ -63,20 +63,21 @@
   resize: none;
 }
 .inquiryform  button{
+  margin-top: 15px;
+  border: 1px solid black;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: #1A1D29;
-  color: #F5F7FA;
+  background: black;
+  color: white;
   border-radius: 10px;
   padding: 14px;
   font-size: 16px;
   cursor: pointer;
   transition: 0.3s ease-in-out;
 }
-.inquiryform  button:hover{
-    color: #00C8FF;
-    background: #163349;
+.inquiryform  button:active{
+  transform: scale(0.98);
 }
 
 .contactbox{
@@ -95,6 +96,9 @@
 }
 .contactbox p{
     font-size: 15px;
+}
+.contactbox a :hover{
+  text-decoration: underline;
 }
 
 .socialicons{
@@ -133,7 +137,7 @@
   .contactrightsection {
     padding: 2.5rem; 
   }
-   .contactimgsection {
+   .contactimgsection img{
   width: 400px;
  }
 }
@@ -162,7 +166,7 @@
  .contactdetailsection{
   gap: 1rem;
  }
- .contactimgsection{
+ .contactimgsection img{
   width: 175px;
  }
   .sibox{
