@@ -7,7 +7,7 @@ import anim1 from "@/animations/food-delivery.json";
 import anim2 from "@/animations/food.json";
 import anim3 from "@/animations/ServeFood.json";
 
-const animations = [anim3, anim2, anim1];
+const animations = [anim3, anim1, anim2];
 
 export default function Hero() {
   const [index, setIndex] = useState(0);

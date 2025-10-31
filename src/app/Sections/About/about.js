@@ -8,7 +8,7 @@ export default function AboutSection() {
     <section className="about-section" id="about">
       <div className="about-headline">
         <span className="about-subhead">MESS MEALS</span>
-        <h2>Why Are We Unique ?</h2>
+        <p>Why Are We Unique ?</p>
       </div>
       <div className="about-features-row">
         <div className="about-feature">

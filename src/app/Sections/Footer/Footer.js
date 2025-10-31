@@ -10,7 +10,7 @@ const Footer = () => {
     <footer>
         <div className='footertop'>
             <div className='sec1'>
-                <p className="logo">MESS MEALS</p>            
+                <p className="logo">m</p>            
             </div>
             <div className='sec2'>
                 <ul>
@@ -28,7 +28,7 @@ const Footer = () => {
            </div>
            <div className="divider"></div>
            <div className="footerbottom">
-                <p>Copyright ©2025 <span>MESS MEALS</span></p>
+                <p>Copyright ©2025 <span>mess meals</span></p>
                 <ul>
                     <li>
                         <a href='/privacy' target='_blank' rel='noopener noreferrer'>Privacy Policy</a>

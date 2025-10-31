@@ -8,7 +8,7 @@ export default function Header() {
 
   return (
     <header className="header">
-      <div className="logo">MESS MEALS</div>
+      <div className="logo">m</div>
       <div
         className={`navbar${menuOpen ? " open" : ""}`}
         onClick={() => setMenuOpen(false)}
