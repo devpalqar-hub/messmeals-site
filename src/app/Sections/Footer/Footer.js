@@ -30,9 +30,13 @@ const Footer = () => {
            <div className="footerbottom">
                 <p>Copyright ©2025 <span>MESS MEALS</span></p>
                 <ul>
-                    <li>Privacy Policy</li>
-                    <li> | </li>
-                    <li>Terms of Service</li>
+                    <li>
+                        <a href='/privacy' target='_blank' rel='noopener noreferrer'>Privacy Policy</a>
+                    </li>
+                    <div> | </div>
+                    <li>
+                        <a href='/terms' target='_blank' rel='noopener noreferrer'>Terms and Conditions</a>
+                    </li>
                 </ul>
            </div>
     </footer>
