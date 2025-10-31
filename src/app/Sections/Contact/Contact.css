@@ -137,7 +137,7 @@
   .contactrightsection {
     padding: 2.5rem; 
   }
-   .contactimgsection {
+   .contactimgsection img{
   width: 400px;
  }
 }
@@ -166,7 +166,7 @@
  .contactdetailsection{
   gap: 1rem;
  }
- .contactimgsection{
+ .contactimgsection img{
   width: 175px;
  }
   .sibox{

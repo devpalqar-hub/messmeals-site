@@ -175,7 +175,8 @@
     font-size: 1rem;
   }
   .about-app-img {
-    width: 140px;
+    margin-top: -50px;
+    width: 180px;
   }
   .about-bottom-row {
     padding: 0 0.5rem;

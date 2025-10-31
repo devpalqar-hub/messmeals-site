@@ -9,8 +9,7 @@
   background: #fff; /* for sticky */
 }
 .logo {
-  width: 75px;
-  height: 75px;
+  padding: 8px 18px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -107,5 +106,12 @@
 
   .hamburger {
     display: flex;
+  }
+}
+@media (max-width: 900px) {
+  .logo{
+    padding: 5px 12px;
+    font-size: 1.5rem;
+    border-radius: 15px;
   }
 }
