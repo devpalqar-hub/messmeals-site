@@ -9,14 +9,17 @@
   background: #fff; /* for sticky */
 }
 .logo {
-  font-family: "Righteous", cursive;
-  font-size: 2rem;
-  font-weight: 400;
-  letter-spacing: 1px;
-  background: linear-gradient(180deg, #0474B9, #163349);  
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;     
+  width: 75px;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  border-radius: 20px;
+  background: #DA3A41;
+  color: #F4C561;
 }
 
 .navbar {
@@ -38,10 +41,10 @@
 }
 
 .navbar a:hover {
-  background-color: #163349;
+  background-color: #DA3A41;
   color: white;
   border-radius: 24px;
-  box-shadow: 0 2px 8px rgba(0, 156, 174, 0.08);
+  box-shadow: 0 2px 8px rgba(244, 198, 98, 0.8);
 }
 
 /* --------------- Responsive: Mobile Menu --------------- */
@@ -58,7 +61,7 @@
 .hamburger span {
   width: 28px;
   height: 3px;
-  background: #163349;
+  background: #DA3A41;
   margin: 4px 0;
   border-radius: 8px;
   transition: 0.4s;
@@ -95,7 +98,7 @@
 
   .navbar a {
     font-size: 1.16rem;
-    color: #223751;
+    color:black;
     padding: 13px 18px;
     border-radius: 16px;
     width: 100%;

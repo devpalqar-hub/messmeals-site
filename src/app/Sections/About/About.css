@@ -9,7 +9,7 @@
 }
 
 .about-subhead {
-  color: #163349;
+  color: #DA3A41;
   font-size: 0.85rem;
   letter-spacing: 2px;
   display: block;
@@ -18,20 +18,20 @@
   text-transform: uppercase;
 }
 
-.about-headline h2 {
+.about-headline p {
   font-size: 2.3rem;
   font-weight: 700;
-  color: #1a242f;
+  color: black;
 }
 
-.about-headline h2::after {
+.about-headline p::after {
   content: "";
   display: block;
   margin: 14px auto 0;
   width: 100px;
   height: 4px;
   border-radius: 2px;
-  background: linear-gradient(90deg, #009cae, #00d2ff);
+  background: linear-gradient(90deg, #DA3A41, #F4C561);
 }
 
 .about-features-row {
@@ -52,7 +52,7 @@
 
 .icon {
     margin-bottom: 18px;
-    color: #163349;
+    color: #DA3A41;
     font-size: 2.55rem;
 }
 
@@ -66,7 +66,7 @@
   font-size: 1.2rem;
   font-weight: 700;
   margin-bottom: 10px;
-  color: #222a36;
+  color: black;
 }
 
 .about-feature p {
@@ -74,6 +74,7 @@
   font-size: 0.98rem;
   line-height: 1.6;
   margin: 0;
+  font-weight: 300;
 }
 
 .about-bottom-row {
@@ -98,7 +99,7 @@
   font-size: 1.6rem;
   font-weight: 700;
   margin-bottom: 12px;
-  color: #163349;
+  color: black;
 }
 
 .about-bottom-left p {
@@ -136,7 +137,7 @@
   width: 225px;
   max-width: 80vw;
   border-radius: 20px;
-  box-shadow: 0 4px 32px 0 rgba(50,80,100,0.17);
+  box-shadow: 0 0 15px 0 rgba(0,0,0,0.1);
   background: #fff;
   margin-bottom: -28px;
 }

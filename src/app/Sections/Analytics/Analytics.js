@@ -6,7 +6,7 @@ import { MdGroups ,MdOutlineInsights,MdBarChart   } from "react-icons/md";
 export default function Analytics() {
   return (
     <div className='Analyticssection'>  
-    <h2>Get Insights That Drive Growth</h2>     
+    <div className='Analyticstitle'>Get Insights That Drive Growth</div>     
          <div className="analyticslefttsection">    
            <p className='analyticdetail'>Visualize meal type trends,Customer Pattern,and Delivery performance in real time.Make informed decisions,reduce errors,and optimize you mess operation effortlessly</p>
            <ul>

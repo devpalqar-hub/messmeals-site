@@ -13,11 +13,11 @@ footer{
     display: flex;
     list-style: none;
     gap: 40px;
-    color: #163349;
+    color: black;
 }
 .sec2 ul li:hover{
     cursor: pointer;
-    color: #00C8FF;
+    color: #DA3A41;
     font-weight: 500;
 }
 .divider{
@@ -44,7 +44,9 @@ footer{
 }
 .footerbottom span{
     font-size: 14px;
-    font-family: "Righteous", cursive;
+    font-weight: 400;
+    color: #DA3A41;
+    font-family: "Poppins", sans-serif;
 }
 .footerbottom ul{
     list-style: none;
@@ -56,6 +58,9 @@ footer{
 
 .footerbottom div{
     display: inline;
+}
+.footerbottom a:hover{
+    color: #DA3A41;
 }
 
 @media (max-width: 970px) {
