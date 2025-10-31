@@ -24,9 +24,7 @@ footer{
     margin: 20px;
     border: 1px solid #a3a5a955;
 }
-.downloadicons{
-   
-}
+
 .downloadbadges img {
   margin-right: 12px;
   border-radius: 12px;
@@ -52,6 +50,11 @@ footer{
     list-style: none;
 }
 .footerbottom ul li{
+    display: inline;
+    cursor: pointer;
+}
+
+.footerbottom div{
     display: inline;
 }
 
