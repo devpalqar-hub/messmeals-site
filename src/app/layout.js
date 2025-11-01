@@ -20,6 +20,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        <link rel="icon" href="/logo.png" type="image/png" />
         <title>Mess Meals | All-in-one Mess Management | Mess Meals India | Mess Food</title>
         <meta name="description" content="Effortlessly manage mess meals, deliveries, analytics, and subscriptions in one app." />
         <meta property="og:title" content="Mess Meals Management App" />
