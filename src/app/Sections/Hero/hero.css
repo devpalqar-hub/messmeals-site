@@ -228,7 +228,7 @@
 /* ----------- Phones (max 600px) ----------- */
 @media (max-width: 600px) {
   .hero {
-    padding: 70px 0 0 0;
+    padding: 70px 20px 10px 20px;
   }
 
   .container {
@@ -257,14 +257,17 @@
 }
 
 /* ----------- Small Phones (max 400px) ----------- */
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   .title {
     font-size: 1.3rem;
   }
 
+
   .desc {
     font-size: 0.9rem;
-  }
+    text-align: center;
+    margin: 0 auto;
+    }
 
   .dwnld-btn,
   .demo-btn {

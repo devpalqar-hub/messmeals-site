@@ -62,8 +62,8 @@ export default function Contact() {
             <HiOutlineMail className='contacticon'/>
             <div>
               <h4>Email Us</h4>
-              <a href="mailto:messmeals@gmail.com" target="_blank" rel="noopener noreferrer">
-                <p>messmeals@gmail.com</p>
+              <a href="mailto:info@messmeals.com" target="_blank" rel="noopener noreferrer">
+                <p>info@messmeals.com</p>
               </a>
               
             </div>
@@ -72,12 +72,12 @@ export default function Contact() {
           <HiOutlinePhone  className='contacticon'/>
            <div>
             <h4>Call Us</h4>
-            <a href="tel:+919876543210"><p>+91 9876543210</p></a>
+            <a href="tel:+919995498218" target="_blank" rel="noopener noreferrer"><p>+91 9995498218</p></a>
            </div>
          </div>
          <div className="contactbox">
           <FaWhatsapp className='contacticon'/>
-           <a  href="https://wa.me/919895672770?text=Hello%20I%20want%20to%20know%20more" target="_blank" rel="noopener noreferrer">
+           <a  href="https://wa.me/919995498118" target="_blank" rel="noopener noreferrer">
            <h4>Chat with Us</h4>
            </a>
          </div>       
