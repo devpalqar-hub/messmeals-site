@@ -51,6 +51,13 @@
     color: #DA3A41;
 }
 
+@media (max-width: 900px) {
+.analyticslefttsection ul{
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+}
 @media (max-width: 720px) {
     .Analyticssection{
     padding: 24px 48px;
