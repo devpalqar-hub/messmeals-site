@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 36px;
+  padding: 16px 48px;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -69,7 +69,7 @@
 /* Small screens breakpoint (<900px) */
 @media (max-width: 900px) {
   .header {
-    padding: 14px 16px;
+    padding: 14px 30px;
   }
 
   .navbar {
@@ -108,7 +108,7 @@
     display: flex;
   }
 }
-@media (max-width: 900px) {
+@media (max-width: 480px) {
   .logo{
     padding: 5px 12px;
     font-size: 1.5rem;
