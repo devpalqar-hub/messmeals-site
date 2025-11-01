@@ -77,7 +77,7 @@ export default function Contact() {
          </div>
          <div className="contactbox">
           <FaWhatsapp className='contacticon'/>
-           <a  href="https://wa.me/919995498118" target="_blank" rel="noopener noreferrer">
+           <a  href="https://wa.me/919995498218" target="_blank" rel="noopener noreferrer">
            <h4>Chat with Us</h4>
            </a>
          </div>       
