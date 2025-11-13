@@ -33,7 +33,7 @@
     font-size: 18px;
     font-weight: 300;
 }
-.planbox button{
+.planbox a{
     border: 2px solid black;
     font-size: 16px;
     font-weight: 600;
@@ -43,7 +43,7 @@
     background: black;
     color: white;
 }
-.planbox button:hover{
+.planbox a:hover{
     color: black;
     background: #F4C561;
 }

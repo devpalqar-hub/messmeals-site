@@ -3,9 +3,7 @@
 import React from 'react'
 import './Contact.css'
 import Lottie from "lottie-react";
-import contactani from "../../../animations/contact us.json";
-import { FaFacebookF,FaInstagram,FaLinkedinIn ,FaWhatsapp } from "react-icons/fa";
-import { FaXTwitter,FaPhone } from "react-icons/fa6";
+import { FaWhatsapp } from "react-icons/fa";
 import { HiOutlineMail,HiOutlinePhone  } from "react-icons/hi";
 import { useState } from 'react';
 
@@ -15,11 +13,15 @@ export default function Contact() {
   const[phone,setPhone]=useState("");
   const[message,setMessage]=useState("");
 
+  const [showAlert, setShowAlert] = useState(false);
+  const [alertMessage, setAlertMessage] = useState("");
+  const [alertType, setAlertType] = useState("success");
+
   const handleSubmit =async (e)=> {
     e.preventDefault();
     console.log("Form submitted");
   
-    const API_URL="http://145.223.19.248/supermeals/contact-form";
+    const API_URL="http://31.97.237.63/supermeals/contact-form";
   try{
     const response = await fetch(API_URL,{
       method: 'POST',
@@ -34,26 +36,51 @@ export default function Contact() {
         }),
     });
     if (response.ok){
-      alert("Message sent successfully");
+      setAlertType("success");
+      setAlertMessage("Message sent successfully");
+      setShowAlert(true);
         setName("");
         setEmail("");
         setPhone("");
         setMessage("");
+
+        setTimeout(() => setShowAlert(false),1200 );
     }
     else{
-      alert("Something went wrong")    
+      setAlertType("error");
+      setAlertMessage("Something went wrong");
+      setShowAlert(true);
+      setTimeout(() => setShowAlert(false),1200 );
+
     }
   }
   catch(error){
+    setAlertType("error");
     console.error("Error",error);
-    alert("Error sending message");
+    setAlertMessage("Error sending message");
+    setShowAlert(true);
+    setTimeout(() => setShowAlert(false),1200 );
   }
   };
 
 
-
   return (
     <div className='contact' id="contact">
+      {showAlert && (
+        <div className="alertOverlay">
+          <div className={`alertBox ${alertType}`}>
+            <div className="alertContent">
+              {alertType === "success" ? (
+                <span className="alertIcon successIcon">✔</span>
+              ) : (
+                <span className="alertIcon errorIcon">✖</span>
+              )}
+              <p className="alertText">{alertMessage}</p>
+            </div>
+          </div>
+        </div>
+      )}
+
         <div className="contactmain">
           <div className="contactleftsection">
            <div className="contactdetailsection">
@@ -62,7 +89,7 @@ export default function Contact() {
             <HiOutlineMail className='contacticon'/>
             <div>
               <h4>Email Us</h4>
-              <a href="mailto:info@messmeals.com" target="_blank" rel="noopener noreferrer">
+              <a href="mailto:info@messmeals.com"  rel="noopener noreferrer">
                 <p>info@messmeals.com</p>
               </a>
               
@@ -72,7 +99,7 @@ export default function Contact() {
           <HiOutlinePhone  className='contacticon'/>
            <div>
             <h4>Call Us</h4>
-            <a href="tel:+919995498218" target="_blank" rel="noopener noreferrer"><p>+91 9995498218</p></a>
+            <a href="tel:+919995498218" rel="noopener noreferrer"><p>+91 9995498218</p></a>
            </div>
          </div>
          <div className="contactbox">
@@ -83,7 +110,7 @@ export default function Contact() {
          </div>       
            </div>
           <div className="contactimgsection">
-            <img src="./Contactimg.png" alt="" />
+            <img src="./Contactimg.png" alt="Contact" />
           </div>
           
         </div>
@@ -102,12 +129,14 @@ export default function Contact() {
                 type="email" 
                 value={email}
                 onChange={(e)=> setEmail(e.target.value)}
+                required
               />        
               <input 
                 placeholder="Phone" 
                 type="tel" 
                 value={phone}
                 onChange={(e)=> setPhone(e.target.value)}
+                required
               />         
               <textarea 
                 placeholder="Message" 
@@ -115,6 +144,7 @@ export default function Contact() {
                 rows="5"
                 value={message}
                 onChange={(e)=>setMessage(e.target.value)}
+                required
               />            
               <button type="submit">Send Message </button>
             </form>
