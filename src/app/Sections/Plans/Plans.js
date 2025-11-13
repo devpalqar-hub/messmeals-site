@@ -20,7 +20,7 @@ export default function Plans() {
                       loop
                       autoplay/>
                     </div>
-                    <button>Contact now</button>
+                    <a  href="https://wa.me/919995498218" target="_blank" rel="noopener noreferrer">Contact now</a>
             </div>  
           
     </div>

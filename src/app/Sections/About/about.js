@@ -34,7 +34,7 @@ export default function AboutSection() {
             Join Mess Meals for a refreshed experience managing meal orders, deliveries, and customer satisfaction.
           </p>
           <div className="app-badges">
-            <Image src="/play-store.png" alt="Google Play" width={130} height={44} />
+            <a  href="https://play.google.com/store/apps/details?id=com.messmeals.mess" target="_blank" rel="noopener noreferrer"><Image src="/play-store.png" alt="Google Play" width={130} height={44} /></a>
             <Image src="/app-store.png" alt="App Store" width={130} height={44} />
           </div>
         </div>
